@@ -18,6 +18,36 @@ Finally, having all other avenues closed to me, I decided to write my own utilit
 ```
 .\CleanupMyMailbox.exe --help
 ```
+This will print the following:
+```
+********************************************************************************
+Cleanup My Mailbox 1.0.0
+Copyright (c) 2020 Jonathan Franzone
+********************************************************************************
+
+  -v, --verbose               Set output to verbose messages.
+  -e, --email                 Required. Email address
+  -m, --mailbox               Path to the mailbox that needs to be cleaned. Use
+                              a forward slash path separator. For example:
+                              INBOX/Automated/Services
+  -d, --defaultcredentials    Use default credentials. Use this option for
+                              hosted Exchange instances where the user is logged
+                              into the same domain.
+  -u, --username              Username for authenticating to the Exchange
+                              server. Leave blank if the same as your email
+                              address.
+  -s, --password              Password for authenticating to the Exchange
+                              server. If required and left blank the program
+                              will prompt for a password.
+  -a, --age                   Required. The age of emails after which they
+                              should be deleted. This should be a string that
+                              the .NET TimeSpan.Parse() method will recognize.
+                              For example: 1 = 1 day, 6:30 = 6 hours and 30
+                              minutes
+  -n, --noprompt              Do not prompt before deleting emails
+  --help                      Display this help screen.
+  --version                   Display version information.
+```
 
 ### Within On-premises Exchange Environment
 If you are targeting an on-premises Exchange server and your client/workstation is domain joined, then you don't need to enter credentials.
