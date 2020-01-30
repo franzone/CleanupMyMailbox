@@ -2,7 +2,16 @@
 CleanupMyMailbox is a command-line utility that deletes emails of a certain age from a specific mailbox within Microsoft Exchange Server.
 
 ## Background
-I work within a corporate environment that manages its own Microsoft Exchange Server. I am also on a development team and receive thousands of automated email messages per day from various services that run across multiple servers. I started out creating rules for these emails in MS Outlook that sorted them into folders based on the service that generated them. I would then go in once a day and clean out the folders. This is a bit tedious. Additionally, I want to keep emails that are within the last day in case something goes wrong with that service and I need to reference an email that was generated. Even more tedious.
+I work within a corporate environment that manages its own Microsoft Exchange Server. I am also on a development team and receive thousands
+of automated email messages per day from various services that run across multiple servers. I started out creating rules for these emails
+in MS Outlook that sorted them into folders based on the service that generated them. I would then go in once a day and clean out the folders.
+This is a bit tedious. Additionally, I want to keep emails that are within the last day in case something goes wrong with that service and
+I need to reference an email that was generated. Even more tedious.
+
+Next I thought to myself, _"Why don't I use the built-in Outlook Archive method?"_ That would be a great option, but my company manages our
+archive policies. That means I cannot modify them.
+
+Finally, having all other avenues closed to me, I decided to write my own utility to perform this task. I am, after all, a Software Engineer.
 
 ## Usage
 ### To print help
@@ -10,5 +19,23 @@ I work within a corporate environment that manages its own Microsoft Exchange Se
 .\CleanupMyMailbox.exe --help
 ```
 
+### Within On-premises Exchange Environment
+If you are targeting an on-premises Exchange server and your client/workstation is domain joined, then you don't need to enter credentials.
+```
+.\CleanupMyMailbox.exe --email my.email@email.org --mailbox "Sorted/Service Emails" --age 1 --defaultcredentials
+```
+This will delete emails in the folder `INBOX\Sorted\Service Emails` that are at least 1 day old for the email `my.email@email.org`.
+
+### To Connect Remotely
+If you are connecting to a remote instance of Exchange (i.e. Office365), then you'll need to enter credentials.
+```
+.\CleanupMyMailbox.exe --email my.email@email.org --mailbox "Sorted/Service Emails" --age 1 --password MyS3cret
+```
+You may use the `--username` parameter to specify your login username. If this is not provided then the utility will use your email address
+(as provided by `--email`). You may use the `--password` parameter to provide your email password on the command line. If you do not provide
+the `--password` then the utility will prompt (if it is required).
+
 ## References
-* https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/get-started-with-ews-managed-api-client-applications
+* [Get started with EWS Managed API client applications](https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/get-started-with-ews-managed-api-client-applications)
+* [TimeSpan.Parse Method](https://docs.microsoft.com/en-us/dotnet/api/system.timespan.parse?view=netframework-4.6.2) - See his page for
+  the string format for various timespans.
