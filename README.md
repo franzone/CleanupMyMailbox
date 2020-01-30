@@ -13,6 +13,9 @@ archive policies. That means I cannot modify them.
 
 Finally, having all other avenues closed to me, I decided to write my own utility to perform this task. I am, after all, a Software Engineer.
 
+## Download
+You can click on the __Release__ tab above or navigate to https://github.com/franzone/CleanupMyMailbox/releases.
+
 ## Usage
 ### To print help
 ```
