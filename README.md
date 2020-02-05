@@ -69,6 +69,7 @@ You may use the `--username` parameter to specify your login username. If this i
 the `--password` then the utility will prompt (if it is required).
 
 ## References
+* [How to Delete Old Emails in MS Exchange Using EWS](http://tech.franzone.blog/2020/02/05/how-to-delete-old-emails-in-ms-exchange-using-ews/)
 * [Get started with EWS Managed API client applications](https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/get-started-with-ews-managed-api-client-applications)
 * [TimeSpan.Parse Method](https://docs.microsoft.com/en-us/dotnet/api/system.timespan.parse?view=netframework-4.6.2) - See his page for
   the string format for various timespans.
