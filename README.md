@@ -68,6 +68,12 @@ You may use the `--username` parameter to specify your login username. If this i
 (as provided by `--email`). You may use the `--password` parameter to provide your email password on the command line. If you do not provide
 the `--password` then the utility will prompt (if it is required).
 
+## Limitations
+* Currently limited to processing 1000 emails at a time. This is because of a paging feature in EWS. I haven't bothered to implement
+  any type of paging.
+* It is possible that the list of emails found in the search could change while processing. This program makes no attempt to detect that
+  condition or to correctly handle it.
+
 ## References
 * [How to Delete Old Emails in MS Exchange Using EWS](http://tech.franzone.blog/2020/02/05/how-to-delete-old-emails-in-ms-exchange-using-ews/)
 * [Get started with EWS Managed API client applications](https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/get-started-with-ews-managed-api-client-applications)
