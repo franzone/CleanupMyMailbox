@@ -47,6 +47,8 @@ Copyright (c) 2020 Jonathan Franzone
                               the .NET TimeSpan.Parse() method will recognize.
                               For example: 1 = 1 day, 6:30 = 6 hours and 30
                               minutes
+  -x, --deletemode            Sets the Delete mode to Hard Delete. Emails will
+                              not go into Deleted Items folders
   -n, --noprompt              Do not prompt before deleting emails
   --help                      Display this help screen.
   --version                   Display version information.
