@@ -1,0 +1,16 @@
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Debug\CleanupMyMailbox.exe.config
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Debug\CleanupMyMailbox.exe
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Debug\CleanupMyMailbox.pdb
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Debug\CommandLine.dll
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Debug\Microsoft.Exchange.WebServices.Auth.dll
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Debug\Microsoft.Exchange.WebServices.dll
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Debug\CommandLine.xml
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Debug\Microsoft.Exchange.WebServices.pdb
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Debug\Microsoft.Exchange.WebServices.xml
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Debug\Microsoft.Exchange.WebServices.Auth.pdb
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Debug\Microsoft.Exchange.WebServices.Auth.xml
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\obj\Debug\CleanupMyMailbox.csprojAssemblyReference.cache
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\obj\Debug\CleanupMyMailbox.csproj.CoreCompileInputs.cache
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\obj\Debug\CleanupMyMailbox.csproj.CopyComplete
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\obj\Debug\CleanupMyMailbox.exe
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\obj\Debug\CleanupMyMailbox.pdb

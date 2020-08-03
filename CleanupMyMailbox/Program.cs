@@ -33,8 +33,13 @@ namespace CleanupMyMailbox
             [Option('a', "age", Required = true, HelpText = "The age of emails after which they should be deleted. This should be a string that the .NET TimeSpan.Parse() method will recognize. For example: 1 = 1 day, 6:30 = 6 hours and 30 minutes")]
             public TimeSpan Age { get; set; }
 
+            [Option('x', "deletemode", Required = false, HelpText = "Sets the Delete mode to Hard Delete. Emails will not go into Deleted Items folders")]
+            public bool DeleteMode { get; set; }
+
             [Option('n', "noprompt", Required = false, HelpText = "Do not prompt before deleting emails")]
             public bool NoPrompt { get; set; }
+
+
 
             public override string ToString()
             {
@@ -85,6 +90,7 @@ namespace CleanupMyMailbox
             if (!string.IsNullOrWhiteSpace(_options.MailboxPath))
             {
                 pathParts.AddRange(_options.MailboxPath.Split(new char[] { '/' }));
+
             }
             if (0 == pathParts[0].ToUpper().CompareTo("INBOX"))
             {
@@ -120,7 +126,15 @@ namespace CleanupMyMailbox
                     {
                         Console.Write(".");
                     }
-                    item.Delete(DeleteMode.MoveToDeletedItems);
+                    if (_options.DeleteMode)
+                    {
+                        item.Delete(DeleteMode.HardDelete);
+                    }
+                    else
+                    {
+                        item.Delete(DeleteMode.MoveToDeletedItems);
+                    }
+
                 }
 
                 Echo((_options.Verbose ? "Finished" : "\r\nFinished"));
@@ -129,14 +143,15 @@ namespace CleanupMyMailbox
 
         private Folder GetFolder(List<string> path)
         {
+            FolderId parentId = new FolderId(WellKnownFolderName.Inbox, _options.Email);
             // First get the INBOX
             Echo("Binding to INBOX", true);
-            Folder fInbox = Folder.Bind(_service, WellKnownFolderName.Inbox);
+
+            Folder fInbox = Folder.Bind(_service, parentId);
 
             if (null != path && 0 < path.Count)
             {
-                FolderId parentId = fInbox.Id;
-                Folder result = null;
+               Folder result = null;
 
                 foreach (string sPath in path)
                 {

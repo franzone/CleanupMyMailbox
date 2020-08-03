@@ -1,0 +1,15 @@
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Release\CleanupMyMailbox.exe.config
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Release\CleanupMyMailbox.exe
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Release\CleanupMyMailbox.pdb
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Release\CommandLine.dll
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Release\Microsoft.Exchange.WebServices.Auth.dll
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Release\Microsoft.Exchange.WebServices.dll
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Release\CommandLine.xml
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Release\Microsoft.Exchange.WebServices.pdb
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Release\Microsoft.Exchange.WebServices.xml
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Release\Microsoft.Exchange.WebServices.Auth.pdb
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\bin\Release\Microsoft.Exchange.WebServices.Auth.xml
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\obj\Release\CleanupMyMailbox.csproj.CoreCompileInputs.cache
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\obj\Release\CleanupMyMailbox.csproj.CopyComplete
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\obj\Release\CleanupMyMailbox.exe
+C:\Users\Marcus Townsend\Source\Repos\Justawebguy\CleanupMyMailbox\CleanupMyMailbox\obj\Release\CleanupMyMailbox.pdb
